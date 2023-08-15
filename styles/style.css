@@ -1,0 +1,147 @@
+:root {
+    /* COLORS */
+    --DARK-CYAN: hsl(158, 36%, 37%);
+    --CREAM: hsl(30, 38%, 92%);
+    --DARK-BLUE: hsl(212, 21%, 14%);
+    --DARK-GRAY-BLUE: hsl(228, 12%, 48%);
+    --WHITE: hsl(0, 0%, 100%);
+    --DARK-GREEN: hsl(158, 45%, 20%);
+
+    /* FONTS */
+    --FF-TEXT: "Montserrat", sans-serif;
+    --FF-TITLE: "Fraunces", serif;
+    --FS: 14px;
+    --FW-TEXT: 500, 700;
+    --FW-TITLE: 700;
+}
+
+/* RESET AND NORMALIZE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+button {
+    all: unset;
+}
+
+/* RULES */
+body {
+    background-color: var(--CREAM);
+    min-height: 100dvh;
+    font-family: var(--FF-TEXT);
+    font-size: var(--FS);
+    font-weight: var(--FW-TEXT);
+    display: grid;
+    place-items: center;
+    align-items: end;
+    padding: 1rem 0;
+}
+
+.card {
+    background-color: var(--WHITE);
+    width: min(600px, 95vw);
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card__img img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 100%;
+}
+
+.card__text {
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    row-gap: 1rem;
+    width: 90%;
+    word-spacing: 2px;
+    width: 100%;
+}
+
+@media (min-width: 601px) {
+    .card__img img {
+        border-radius: unset;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .card {
+        flex-flow: row nowrap;
+    }
+}
+
+.card__category {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: var(--DARK-GRAY-BLUE);
+}
+
+.card__name {
+    font-family: var(--FF-TITLE);
+    font-weight: var(--FW-TITLE);
+    font-size: 2.5em;
+    line-height: 100%;
+}
+
+.card__description {
+    line-height: 180%;
+    color: var(--DARK-GRAY-BLUE);
+}
+
+.card__price--new {
+    font-family: var(--FF-TITLE);
+    font-size: 2.5em;
+    font-weight: var(--FW-TITLE);
+    color: var(--DARK-CYAN);
+}
+
+.card__price--old {
+    text-decoration: line-through;
+    color: var(--DARK-GRAY-BLUE);
+    font-weight: var(--FW-TEXT);
+}
+
+.card__price {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card__toCart {
+    background-color: var(--DARK-CYAN);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    color: var(--WHITE);
+    font-weight: var(--FW-TITLE);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.toCart__icon {
+    background-image: url(../images/icon-cart.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+}
+
+.card__toCart:hover {
+    background-color: var(--DARK-GREEN);
+}
