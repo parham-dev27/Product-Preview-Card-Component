@@ -1,6 +1,6 @@
-<img src="./Screenshots/screenshot-desktop.png"></img>
+<img src="./screenshots/desktop-view.png"></img>
 
-<h1 align="center">Testimonials Grid Section</h1>
+<h1 align="center">Product-Preview-Card-Component</h1>
 
 <div align="center">
   <h3>
@@ -8,7 +8,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="#frontendSolution">
+    <a href="https://www.frontendmentor.io/solutions/productpreviewcardcomponent-parhamdev27-91afLKJvzm">
       Solution
     </a>
    <span> | </span>
@@ -47,4 +47,4 @@ I also learned how to use responsive images in html using the `picture`, `media`
 
 ## Acknowledgments
 
-A big thank you to anyone providing feedback on my <a href="#frontendSolution">solution</a>. It definitely helps to find new ways to code and find easier solutions!
+A big thank you to anyone providing feedback on my <a href="https://www.frontendmentor.io/solutions/productpreviewcardcomponent-parhamdev27-91afLKJvzm">solution</a>. It definitely helps to find new ways to code and find easier solutions!
